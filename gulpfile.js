@@ -129,7 +129,7 @@ gulp.task('watch', function() {
   });
   watch('./js/**/*.js', function () {
     gulp.start('hint:js');
-    gulp.start('style:js');
+    //gulp.start('style:js');
   });
 });
 
@@ -143,7 +143,7 @@ gulp.task('server', ['default'], function () {
 gulp.task('default', ['sass',
                       'fonts',
                       'normalize',
-                      'lint',
+                      //'lint',
                       'browserify',
                       'browserify-test']);
 
